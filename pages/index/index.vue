@@ -1,7 +1,7 @@
 <template>
 	<view class="content">
 		<view >
-			你好,憨八龟先森
+			你好,憨八龟
 		</view>
 	</view>
 </template>
