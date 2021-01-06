@@ -1,0 +1,22 @@
+<template>
+	<view>
+		<uni-nav-bar left-icon="arrowleft" title="标题" @clickLeft="back" />
+	</view>
+</template>
+
+<script>
+    export default {
+        data() {
+            return {
+
+            }
+        },
+        methods: {
+
+        }
+    }
+</script>
+
+<style>
+
+</style>

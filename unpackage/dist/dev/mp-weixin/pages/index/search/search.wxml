@@ -1,0 +1,1 @@
+<view><view class="searchBox"><u-search vue-id="ce18bec6-1" input-align="center" height="70" bind:__l="__l"></u-search></view></view>

@@ -1,4 +1,10 @@
 {
   "navigationBarTitleText": "首页",
-  "usingComponents": {}
+  "titleNview": false,
+  "usingComponents": {
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search",
+    "index-list": "/components/index/index-list",
+    "index-tabs": "/components/index/index-tabs",
+    "blank": "/components/common/blank"
+  }
 }

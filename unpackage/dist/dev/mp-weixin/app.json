@@ -3,7 +3,10 @@
     "pages/index/index",
     "pages/chat/chat",
     "pages/dynamic/dynamic",
-    "pages/mine/mine"
+    "pages/mine/mine",
+    "pages/index/search/search",
+    "pages/index/issue/issue",
+    "pages/index/issue/release"
   ],
   "subPackages": [],
   "window": {
@@ -42,6 +45,5 @@
       }
     ]
   },
-  "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "usingComponents": {}
 }

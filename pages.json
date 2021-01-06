@@ -1,8 +1,47 @@
 {
+    "easycom": {
+        "^u-(.*)": "uview-ui/components/u-$1/u-$1.vue"
+    },
     "pages": [{
         "path": "pages/index/index",
         "style": {
-            "navigationBarTitleText": "首页"
+            "navigationBarTitleText": "首页",
+            "titleNview": false,
+            "app-plus": {
+                "backgroundColor": "#fff",
+                "scrollIndicator": "none",
+                "bounce": "none",
+                "titleNView": {
+                    "backgroundColor": "#fff",
+                    "searchInput": {
+                        "scrollIndicator": "none",
+                        "align": "center",
+                        "disabled": true,
+                        "placeholder": "搜索一下",
+                        "backgroundColor": "#f7f7f7",
+                        "borderRadius": "12px"
+                    },
+                    "buttons": [{
+                        "fontSrc": "/static/icon/icon.ttf",
+                        "text": "\ue609",
+                        "float": "left",
+                        "fontSize": "30px",
+                        "color": "#ff9900"
+
+                    }, {
+                        "fontSrc": "/static/icon/icon.ttf",
+                        "text": "\ue653",
+                        "float": "right",
+                        "fontSize": "30px",
+                        "colorPressed": "#ff9900"
+
+
+                    }]
+
+                }
+            },
+            "mp-weixin": {}
+
         }
     }, {
         "path": "pages/chat/chat",
@@ -25,6 +64,55 @@
             "enablePullDownRefresh": false
         }
 
+    }, {
+        "path": "pages/index/search/search",
+        "style": {
+            "navigationBarTitleText": "搜索详情",
+            "app-plus": {
+                "backgroundColor": "#fff",
+                "scrollIndicator": "none",
+                "bounce": "none",
+                "titleNView": {
+                    "backgroundColor": "#fff",
+                    "autoBackButton": false,
+                    "searchInput": {
+                        "scrollIndicator": "none",
+                        "align": "left",
+                        "disabled": false,
+                        "placeholder": "搜索一下",
+                        "backgroundColor": "#f7f7f7",
+                        "borderRadius": "12px"
+                    },
+                    "buttons": [{
+                        "text": "取消",
+                        "float": "right",
+                        "fontSize": "20px",
+                        "width": "40px",
+                        "colorPressed": "#bbbbbb"
+                    }]
+
+                }
+            },
+            "mp-weixin": {}
+        }
+
+    }, {
+        "path": "pages/index/issue/issue",
+        "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom",
+            "app-plus": {}
+        }
+
+    }, {
+        "path": "pages/index/issue/release",
+        "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom"
+
+        }
+
     }],
     "globalStyle": {
         "navigationBarTextStyle": "black",
@@ -32,31 +120,31 @@
         "navigationBarBackgroundColor": "#F8F8F8",
         "backgroundColor": "#F8F8F8"
     },
-	"tabBar":{
-		"color":"#CDCDCD",
-		"selectedColor":"#FFDF34",
-		"list":[
-			{
-				"pagePath":"pages/index/index",
-				"text":"首页",
-				"iconPath":"./static/tabBar/index.png",
-				"selectedIconPath":"static/tabBar/index_active.png"
-			},{
-				"pagePath":"pages/dynamic/dynamic",
-				"text":"动态",
-				"iconPath":"static/tabBar/dynamic.png",
-				"selectedIconPath":"static/tabBar/dynamic_active.png"
-			},{
-				"pagePath":"pages/chat/chat",
-				"text":"消息",
-				"iconPath":"static/tabBar/chat.png",
-				"selectedIconPath":"static/tabBar/chat_active.png"
-			},{
-				"pagePath":"pages/mine/mine",
-				"text":"我的",
-				"iconPath":"static/tabBar/mine.png",
-				"selectedIconPath":"static/tabBar/mine_active.png"
-			}
-		]
-	}
+    "tabBar": {
+        "color": "#CDCDCD",
+        "selectedColor": "#FFDF34",
+        "list": [{
+            "pagePath": "pages/index/index",
+            "text": "首页",
+            "iconPath": "./static/tabBar/index.png",
+            "selectedIconPath": "static/tabBar/index_active.png"
+        }, {
+            "pagePath": "pages/dynamic/dynamic",
+            "text": "动态",
+            "iconPath": "static/tabBar/dynamic.png",
+            "selectedIconPath": "static/tabBar/dynamic_active.png"
+        }, {
+            "pagePath": "pages/chat/chat",
+            "text": "消息",
+            "iconPath": "static/tabBar/chat.png",
+            "selectedIconPath": "static/tabBar/chat_active.png"
+        }, {
+            "pagePath": "pages/mine/mine",
+            "text": "我的",
+            "iconPath": "static/tabBar/mine.png",
+            "selectedIconPath": "static/tabBar/mine_active.png"
+        }]
+    }
+
+
 }

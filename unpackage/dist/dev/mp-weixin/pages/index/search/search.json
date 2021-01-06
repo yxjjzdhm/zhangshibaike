@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索详情",
+  "usingComponents": {
+    "u-search": "/node-modules/uview-ui/components/u-search/u-search"
+  }
+}
