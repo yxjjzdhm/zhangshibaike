@@ -1,9 +1,9 @@
 <template>
-  <view>
+  <view class="animated fadeInUp">
     <!-- 导航搜索 -->
     <!-- #ifdef MP-WEIXIN -->
     <view class="headerNav">
-      <view class="left iconfont icon-qiandao"> </view>
+      <view class="left iconfont"> </view>
       <view class="center" @tap="goSearch">
         <u-search
           :disabled="true"
@@ -12,8 +12,8 @@
           :show-action="false"
         ></u-search>
       </view>
-      <view class="right" @tap='goIssue'>
-        <view class="iconfont icon-fabu" ></view>
+      <view class="right" @tap="goIssue">
+        <view class="iconfont icon-fabu"></view>
       </view>
     </view>
     <!-- #endif -->
@@ -239,14 +239,7 @@ export default {
     });
   },
   onNavigationBarButtonTap(e) {
-    switch (e.index) {
-      case 1:
-        this. goIssue()
-        break;
-
-      default:
-        break;
-    }
+    this.goIssue();
   },
   //#endif
   methods: {
@@ -297,12 +290,11 @@ export default {
       });
     },
     //跳转到发布页面
-    goIssue(){
+    goIssue() {
       uni.navigateTo({
-        url: './issue/issue',
-     
-      })
-    }
+        url: "./issue/issue",
+      });
+    },
   },
 };
 </script>
@@ -329,11 +321,6 @@ export default {
   height: 100upx;
   padding: 10upx 30upx;
   display: flex;
-  .left {
-    flex: 2;
-    font-size: 70upx;
-    line-height: 70upx;
-  }
   .center {
     margin-left: 30upx;
 

@@ -5,7 +5,7 @@
   right: 0;
   bottom: 0;
 }
-.nothing image.data-v-5a88122a {
+.nothing .img.data-v-5a88122a {
   width: 60%;
   position: absolute;
   left: 50%;

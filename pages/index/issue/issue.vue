@@ -17,8 +17,7 @@
     </u-navbar>
     <!--多行输入框  -->
     <view class="uni-textarea">
-      <textarea v-model="text"  placeholder="发布我的动态">
-      </textarea>
+      <textarea v-model="text" placeholder="发布我的动态"> </textarea>
     </view>
     <u-upload :file-list="fileList" :auto-upload="false"></u-upload>
     <!-- #ifdef MP-WEIXIN -->
@@ -40,39 +39,33 @@ export default {
   },
   //监听事件
   onBackPress() {
-	  if( !this.text &&this.fileList.length<1){
-		  return 
-	  }
-	 if (!this.showMask) {
-		   	this.cache();
-	 		return true;
-	   }
-	  
-
-
+    if (!this.text && this.fileList.length < 1) {
+      return;
+    }
+    if (!this.showMask) {
+      this.cache();
+      return true;
+    }
   },
   methods: {
     // 询问用户是否保留草稿
     cache() {
-        uni.showModal({
-          content: "是否保存为草稿",
-          confirmText: "保存",
-          cancelText: "不保存",
-          success: (res) => {
-			  	if(res.confirm){
-							console.log("保存")
-						}else{
-							console.log("不保存")
-						}
-            this.showMask = true;
-            uni.navigateBack({
-              delta: 1, // 回退前 delta(默认为1) 页面
-			});
-			
-          },
-        });
-	  
-	  
+      uni.showModal({
+        content: "是否保存为草稿",
+        confirmText: "保存",
+        cancelText: "不保存",
+        success: (res) => {
+          if (res.confirm) {
+            console.log("保存");
+          } else {
+            console.log("不保存");
+          }
+          this.showMask = true;
+          uni.navigateBack({
+            delta: 1, // 回退前 delta(默认为1) 页面
+          });
+        },
+      });
     },
     // 返回上一级
     gohome() {

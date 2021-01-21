@@ -1,5 +1,11 @@
 {
   "navigationBarTitleText": "动态",
   "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "navigationStyle": "custom",
+  "usingComponents": {
+    "common-list": "/components/common/common-list",
+    "tabs": "/components/dynamic/dynamic-tabs",
+    "hot-list": "/components/dynamic/dynamic-hotList/dynamic-hotList",
+    "topic-list": "/components/dynamic/dynamic-topicList/dynamic-topicList"
+  }
 }

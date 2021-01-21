@@ -5,7 +5,7 @@
     "pages": [{
         "path": "pages/index/index",
         "style": {
-            "navigationBarTitleText": "首页",
+            "navigationBarTitleText": "广场",
             "titleNview": false,
             "app-plus": {
                 "backgroundColor": "#fff",
@@ -22,13 +22,6 @@
                         "borderRadius": "12px"
                     },
                     "buttons": [{
-                        "fontSrc": "/static/icon/icon.ttf",
-                        "text": "\ue609",
-                        "float": "left",
-                        "fontSize": "30px",
-                        "color": "#ff9900"
-
-                    }, {
                         "fontSrc": "/static/icon/icon.ttf",
                         "text": "\ue653",
                         "float": "right",
@@ -54,7 +47,12 @@
         "path": "pages/dynamic/dynamic",
         "style": {
             "navigationBarTitleText": "动态",
-            "enablePullDownRefresh": false
+            "enablePullDownRefresh": false,
+            "navigationStyle": "custom",
+            "app-plus": {
+                "titleNview": false
+
+            }
         }
 
     }, {
@@ -105,12 +103,24 @@
         }
 
     }, {
-        "path": "pages/index/issue/release",
+        "path": "components/dynamic/dynamic-hotList/dynamic-hotList",
         "style": {
             "navigationBarTitleText": "",
-            "enablePullDownRefresh": false,
-            "navigationStyle": "custom"
+            "enablePullDownRefresh": false
+        }
 
+    }, {
+        "path": "components/dynamic/dynamic-topicList/dynamic-topicList",
+        "style": {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
+        }
+
+    }, {
+        "path": "pages/topic-nav/topic-nav",
+        "style": {
+            "navigationBarTitleText": "话题分类",
+            "enablePullDownRefresh": false
         }
 
     }],
@@ -125,7 +135,7 @@
         "selectedColor": "#FFDF34",
         "list": [{
             "pagePath": "pages/index/index",
-            "text": "首页",
+            "text": "广场",
             "iconPath": "./static/tabBar/index.png",
             "selectedIconPath": "static/tabBar/index_active.png"
         }, {

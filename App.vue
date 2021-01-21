@@ -16,7 +16,7 @@
 @import "./common/uni.css";
 /* @import "./common/iconfont.css"; */
 @import "./common/iconfont/iconfont.css";
-	@import "uview-ui/index.scss";
+@import "uview-ui/index.scss";
 
 
 	/*每个页面公共css */

@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "话题分类",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "index-tabs": "/components/index/index-tabs",
+    "index-list": "/components/index/index-list",
+    "blank": "/components/common/blank",
+    "topic-list": "/components/dynamic/dynamic-topicList/dynamic-topicList"
+  }
+}

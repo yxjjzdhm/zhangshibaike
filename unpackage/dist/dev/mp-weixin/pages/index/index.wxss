@@ -213,13 +213,6 @@
   display: -webkit-flex;
   display: flex;
 }
-.headerNav .left {
-  -webkit-box-flex: 2;
-  -webkit-flex: 2;
-          flex: 2;
-  font-size: 70rpx;
-  line-height: 70rpx;
-}
 .headerNav .center {
   margin-left: 30rpx;
   -webkit-box-flex: 9;

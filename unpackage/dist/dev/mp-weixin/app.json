@@ -6,7 +6,9 @@
     "pages/mine/mine",
     "pages/index/search/search",
     "pages/index/issue/issue",
-    "pages/index/issue/release"
+    "components/dynamic/dynamic-hotList/dynamic-hotList",
+    "components/dynamic/dynamic-topicList/dynamic-topicList",
+    "pages/topic-nav/topic-nav"
   ],
   "subPackages": [],
   "window": {
@@ -21,7 +23,7 @@
     "list": [
       {
         "pagePath": "pages/index/index",
-        "text": "首页",
+        "text": "广场",
         "iconPath": "./static/tabBar/index.png",
         "selectedIconPath": "static/tabBar/index_active.png"
       },
