@@ -4,11 +4,12 @@
     "ignore": []
   },
   "setting": {
-    "urlCheck": false
+    "urlCheck": false,
+    "minified": true
   },
   "compileType": "miniprogram",
   "libVersion": "",
-  "appid": "touristappid",
+  "appid": "wxbb69d7e18fafdc60",
   "projectname": "张氏百科",
   "condition": {
     "search": {
