@@ -8,12 +8,13 @@
     "pages/index/issue/issue",
     "components/dynamic/dynamic-hotList/dynamic-hotList",
     "components/dynamic/dynamic-topicList/dynamic-topicList",
-    "pages/topic-nav/topic-nav"
+    "pages/topic-nav/topic-nav",
+    "pages/topic-details/topic-details"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "black",
-    "navigationBarTitleText": "张氏百科",
+    "navigationBarTitleText": "枫言枫语",
     "navigationBarBackgroundColor": "#F8F8F8",
     "backgroundColor": "#F8F8F8"
   },

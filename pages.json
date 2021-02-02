@@ -5,8 +5,7 @@
     "pages": [{
         "path": "pages/index/index",
         "style": {
-            "navigationBarTitleText": "广场",
-            "titleNview": false,
+            "navigationBarTitleText": "枫言枫语",
             "app-plus": {
                 "backgroundColor": "#fff",
                 "scrollIndicator": "none",
@@ -50,6 +49,7 @@
             "enablePullDownRefresh": false,
             "navigationStyle": "custom",
             "app-plus": {
+                "scrollIndicator": "none",
                 "titleNview": false
 
             }
@@ -123,10 +123,28 @@
             "enablePullDownRefresh": false
         }
 
+    }, {
+        "path": "pages/topic-details/topic-details",
+        "style": {
+            "navigationBarTitleText": "",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": true,
+            "app-plus": {
+                "scrollIndicator": "none",
+                "titleNView": {
+                    "type": "transparent",
+                    "buttons": [{
+                        "type": "menu"
+                    }]
+                }
+
+            }
+        }
+
     }],
     "globalStyle": {
         "navigationBarTextStyle": "black",
-        "navigationBarTitleText": "张氏百科",
+        "navigationBarTitleText": "枫言枫语",
         "navigationBarBackgroundColor": "#F8F8F8",
         "backgroundColor": "#F8F8F8"
     },

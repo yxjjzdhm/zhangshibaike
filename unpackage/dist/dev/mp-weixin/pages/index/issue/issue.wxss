@@ -20,6 +20,7 @@
 .navBar .slot-wrap .select {
   width: 300rpx;
   text-align: center;
+  padding-right: 40rpx;
 }
 .navBar .slot-wrap .select .icon-xialazhankai {
   font-size: 32rpx;

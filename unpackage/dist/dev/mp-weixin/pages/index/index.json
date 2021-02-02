@@ -1,6 +1,5 @@
 {
-  "navigationBarTitleText": "广场",
-  "titleNview": false,
+  "navigationBarTitleText": "枫言枫语",
   "usingComponents": {
     "u-search": "/node-modules/uview-ui/components/u-search/u-search",
     "index-list": "/components/index/index-list",

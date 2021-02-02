@@ -108,7 +108,6 @@
     -webkit-flex-direction: row;
             flex-direction: row;
     white-space: nowrap;
-    position: fixed;
     z-index: 999;
     /* flex-wrap: nowrap; */
     /* border-color: #cccccc;

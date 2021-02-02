@@ -25,12 +25,12 @@
           @scrolltolower="topLoading"
         >
           <!-- 文章视频内容部分 -->
-          <block v-for="(item, index) in dynamicList.list" :key="item.id">
-            <common-list :item="item" :index="index"></common-list>
+          <block v-for="(item, index1) in dynamicList.list" :key="index1">
+            <common-list :item="item" :index="index1"></common-list>
           </block>
         </scroll-view>
       </swiper-item>
-      <swiper-item class="swiper-item" :key="index">
+      <swiper-item class="swiper-item">
         <scroll-view
           class="scroll-v list"
           scroll-y
@@ -76,8 +76,8 @@
 
           <view class="hot-content">
             <view class="update">最近更新</view>
-            <block v-for="(topic, index) in topicList" :key="topic.index">
-              <topic-list :topic="topic" :index="index"></topic-list>
+            <block v-for="(topic, index2) in topicList" :key="index2">
+              <topic-list :topic="topic" :index="index2"></topic-list>
             </block>
           </view>
         </scroll-view>
@@ -100,7 +100,7 @@ export default {
   },
   data() {
     return {
-      swiperHeight: 500,
+      swiperHeight: 600,
       tabIndex: 0,
       tabBarList: [
         {

@@ -45,7 +45,6 @@
     -webkit-flex-direction: row;
             flex-direction: row;
     white-space: nowrap;
-    position: fixed;
     z-index: 999;
     /* flex-wrap: nowrap; */
     /* border-color: #cccccc;
@@ -194,5 +193,10 @@
 }
 .active {
     color: #515151;
+}
+.active .tab-line {
+  width: 70rpx;
+  margin: auto;
+  border-bottom: 7rpx solid #fede33;
 }
 
