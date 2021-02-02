@@ -112,6 +112,15 @@ export default {
       ],
     };
   },
+  onLoad() {
+    uni.getSystemInfo({
+      success: (res) => {
+        let height = res.windowHeight - uni.upx2px(100);
+        this.swiperHeight = height;
+        console.log(this.swiperHeight);
+      },
+    });
+  },
   methods: {
     //点击导航栏切换
     tabtap(index) {

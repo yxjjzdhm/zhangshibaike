@@ -7,7 +7,7 @@
         <view class="header-right" @tap="goTopic">更多 ></view>
       </view>
       <view class="hot-nav">
-        <block v-for="item in hotList" :key="item.id">
+        <block v-for="item in hotList" :key="item.name">
           <view class="item">{{ item.name }}</view>
         </block>
       </view>

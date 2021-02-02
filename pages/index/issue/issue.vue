@@ -104,6 +104,7 @@ export default {
     .select {
       width: 300rpx;
       text-align: center;
+      padding-right: 40rpx;
 
       .icon-xialazhankai {
         font-size: 32rpx;

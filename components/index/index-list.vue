@@ -29,7 +29,7 @@
     <view class="title"> {{ tempList.title }} </view>
     <!-- 图片|视频区域 -->
     <view class="content">
-      <image class="img" :src="tempList.content" />
+      <image mode="widthFix" class="img" :src="tempList.content" />
       <block v-if="tempList.type == 'video'">
         <view class="pause icon iconfont icon-bofang"> </view>
         <view class="playnum">

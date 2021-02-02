@@ -1,6 +1,6 @@
 <template>
   <view>
-    <view class="hot-item">
+    <view class="hot-item" @tap="goDetails">
       <view class="hot-item-left">
         <image class="img" :src="topic.pic" />
       </view>
@@ -23,12 +23,26 @@
 export default {
   props: {
     topic: Object,
-    index: Number,
   },
   data() {
     return {};
   },
-  methods: {},
+  methods: {
+    goDetails() {
+      uni.navigateTo({
+        url: "/pages/topic-details/topic-details",
+        success: function (res) {
+          // success
+        },
+        fail: function () {
+          // fail
+        },
+        complete: function () {
+          // complete
+        },
+      });
+    },
+  },
 };
 </script>
 

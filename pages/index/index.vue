@@ -80,8 +80,8 @@ export default {
           list: [
             {
               userPic:
-                "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨八龟",
+                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEKASG3fotGuuhMUn*sD7slRyRBbbDOOBlYzs5s9JaPsxauwabxhk2oBzWiwrK.Ee9XkFWPmgDG2GvlmshfoiwKs!/b&bo=oAXAAwAAAAABF1Y!&rf=viewer_4",
+              userName: "2枫啦啦啦",
               isGuanZhu: false, //是否关注
               title: "憨八龟啦啦啦啦", //标题
               type: "img", // img 图片  video:视频
@@ -97,13 +97,13 @@ export default {
             },
             {
               userPic:
-                "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨大龟",
+                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEKASG3fotGuuhMUn*sD7slRyRBbbDOOBlYzs5s9JaPsxauwabxhk2oBzWiwrK.Ee9XkFWPmgDG2GvlmshfoiwKs!/b&bo=oAXAAwAAAAABF1Y!&rf=viewer_4",
+              userName: "谢霆锋",
               isGuanZhu: true, //是否关注
-              title: "憨九龟啦啦啦啦啦", //标题
+              title: "有人聊五块钱吗 在线等", //标题
               type: "video", // img 图片  video:视频
               content:
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww4.sinaimg.cn%2Fmw690%2F61e692a7gy1galqkqhd5fj218z0u07kw.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611813703&t=79d1d825bd20d941d99f4a76cf0c6bde", //封面地址
+                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrECF8Eila3I3XFdY7eMCOzTC5yNksuNql3KgUvlj3I2.jpUt.w1LQwDhmiN3qzcXTjtUbuhCA*WkKWvhhKrxstA4!/b&bo=7gI2BQAAAAABF.8!&rf=viewer_4", //封面地址
               infoNum: {
                 status: 2, // 0 都没点  1 点赞    2 踩
                 praiseNum: 1000, //点赞数
@@ -122,12 +122,12 @@ export default {
             {
               userPic:
                 "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨八龟",
+              userName: "爱你的枫",
               isGuanZhu: false, //是否关注
-              title: "憨八龟啦啦啦啦", //标题
+              title: "寂寞的夜晚", //标题
               type: "img", // img 图片  video:视频
               content:
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww4.sinaimg.cn%2Fmw690%2F61e692a7gy1galqkqhd5fj218z0u07kw.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611813703&t=79d1d825bd20d941d99f4a76cf0c6bde", //封面地址
+                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEMNSaSSHdoisYYZe5uKQnXoZ81nY0IRRnKqh8mH17ky9K0qAnQTXI7HKmSlfcYed5cBlNpQunei44G7XSOrYAZw!/b&bo=6gJ5BAAAAAABF6U!&rf=viewer_4", //封面地址
               infoNum: {
                 status: 1, // 0 都没点  1 点赞    2 踩
                 praiseNum: 1000, //点赞数
@@ -301,13 +301,7 @@ export default {
 
 <style lang="scss">
 @import "../../common/scroll.css";
-.active {
-  .tab-line {
-    width: 70upx;
-    margin: auto;
-    border-bottom: 7upx solid #fede33;
-  }
-}
+
 .loadingBox {
   text-align: center;
   color: #aaa;
