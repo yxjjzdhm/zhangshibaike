@@ -9,7 +9,12 @@
     "components/dynamic/dynamic-hotList/dynamic-hotList",
     "components/dynamic/dynamic-topicList/dynamic-topicList",
     "pages/topic-nav/topic-nav",
-    "pages/topic-details/topic-details"
+    "pages/topic-details/topic-details",
+    "pages/chat/chat-details/chat-details",
+    "pages/chat/user-friend/user-friend",
+    "pages/chat/chat-interface/chat-interface",
+    "pages/video/video",
+    "pages/details/details"
   ],
   "subPackages": [],
   "window": {
@@ -49,5 +54,5 @@
     ]
   },
   "usingComponents": {},
-  "sitemapLocation": "sitemap.json"
+  "sitemapLocation": "sitemap37.json"
 }

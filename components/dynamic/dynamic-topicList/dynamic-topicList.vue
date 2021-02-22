@@ -1,6 +1,6 @@
 <template>
   <view>
-    <view class="hot-item" @tap="goDetails">
+    <view class="hot-item animated fadeInLeft fast" @tap="goDetails">
       <view class="hot-item-left">
         <image class="img" :src="topic.pic" />
       </view>

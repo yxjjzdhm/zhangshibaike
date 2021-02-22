@@ -25,7 +25,6 @@ export default {
   },
   methods: {
     goTopic() {
-      console.log("这个有毒把");
       uni.navigateTo({
         url: "../../pages/topic-nav/topic-nav",
       });

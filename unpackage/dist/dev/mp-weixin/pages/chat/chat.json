@@ -1,5 +1,9 @@
 {
   "navigationBarTitleText": "消息",
-  "enablePullDownRefresh": false,
-  "usingComponents": {}
+  "enablePullDownRefresh": true,
+  "usingComponents": {
+    "u-swipe-action": "/node-modules/uview-ui/components/u-swipe-action/u-swipe-action",
+    "chat-list": "/components/chat/chat-list",
+    "chat-popup": "/components/chat/chat-popup"
+  }
 }

@@ -50,4 +50,57 @@ export default {
 };
 </script>
 
-<style scoped lang="less"></style>
+<style scoped lang="scss">
+//nav 顶部导航部分
+.slot-wrap {
+  width: 750upx;
+  display: flex;
+  .item-box {
+    margin: 0 auto;
+    display: flex;
+    .tabItem {
+      color: #969696;
+      font-size: 36rpx;
+      text-align: center;
+      font-weight: bold;
+      .navbar-line {
+        border: 4upx solid #fede33;
+        width: 80rpx;
+        border-radius: 10upx;
+        margin: 0 auto;
+      }
+    }
+    .active {
+      color: #000;
+    }
+    :nth-child(1) {
+      margin-right: 22rpx;
+    }
+  }
+  // 发布按钮
+  //#ifdef APP-PLUS
+  .icon-bianji1 {
+    position: absolute;
+    font-size: 40rpx;
+    right: 30rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50rpx;
+    z-index: 999;
+  }
+  //#endif
+
+  //#ifdef MP-WEIXIN
+  .icon-fabu {
+    display: flex;
+    position: absolute;
+    left: 30rpx;
+    font-size: 30rpx;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100rpx;
+    z-index: 999;
+  }
+  //#endif
+}
+</style>

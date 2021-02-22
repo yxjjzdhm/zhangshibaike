@@ -1,0 +1,124 @@
+// 内容区域
+.container {
+    margin-top: 32upx;
+    display: flex;
+    //头像部分
+    .portraits {
+        margin-left: 15rpx;
+        width: 100upx;
+        height: 100upx;
+        .touxiang {
+            width: 100upx;
+            height: 100upx;
+            border-radius: 50%;
+        }
+    }
+    //主体部分
+    .main {
+        margin-left: 28rpx;
+        padding-right: 22rpx;
+        // 名字 年龄 关注部分
+        flex: 1;
+        // 主体头部
+        .header {
+            display: flex;
+            justify-content: space-between;
+            .name {
+                font-size: 28rpx;
+                color: #919191;
+            }
+            //关注
+            .guanzhu {
+                width: 120rpx;
+                height: 50rpx;
+                text-align: center;
+                padding: 0 6rpx;
+                font-size: 24rpx;
+                background-color: #f4f4f4;
+                margin-left: 234rpx;
+            }
+        }
+        .time {
+            font-size: 28rpx;
+            color: #ccc;
+        }
+        // 主体title部分
+        .title {
+            margin-top: 30rpx;
+            color: #000;
+            font-size: 30rpx;
+            line-height: 50rpx;
+        }
+        // 图片部分
+        .image {
+            margin-top: 10rpx;
+            position: relative;
+            .img {
+                width: 561rpx;
+                height: 360rpx;
+                border-radius: 30rpx;
+            }
+            // 视频部分
+            .video {
+                color: #fff;
+                .icon-bofang {
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%, -50%);
+                    font-size: 90rpx;
+                }
+                .details {
+                    background-color: rgba(0, 0, 0, 0.4);
+                    border-radius: 20rpx;
+                    padding: 4rpx 10rpx;
+                    position: absolute;
+                    bottom: 25rpx;
+                    right: 45rpx;
+                    font-size: 28rpx;
+                    .txt {
+                        margin-left: 6rpx;
+                    }
+                }
+            }
+        }
+        // 转载部分
+        .reprint {
+            margin-top: 20rpx;
+            background-color: #f7f7f7;
+            padding: 20rpx 15rpx;
+            display: flex;
+            border-radius: 18rpx;
+            .reprint-img {
+                max-width: 250rpx;
+                min-width: 150rpx;
+                min-height: 100rpx;
+                max-height: 150rpx;
+                border-radius: 25rpx;
+            }
+            .reprint-title {
+                margin-left: 10rpx;
+                font-size: 26rpx;
+                color: #4f4f4f;
+            }
+        }
+        // 底部部分
+        .bottom {
+            color: #bbbbbb;
+            display: flex;
+            justify-content: space-between;
+            .site {
+                color: #c6c6c6;
+            }
+            .right {
+                display: flex;
+                .icon-xiaoxi {
+                    margin: 0 20rpx;
+                }
+                .txt {
+                    margin-left: 10rpx;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,5 @@
 <template>
-  <view class="animated fadeInUp">
+  <view>
     <!-- 导航搜索 -->
     <!-- #ifdef MP-WEIXIN -->
     <view class="headerNav">
@@ -47,7 +47,11 @@
           <template v-if="items.list.length > 0">
             <block v-for="(item, index1) in items.list" :key="index1">
               <!-- 图文区域 -->
-              <index-list :item="item" :index="index1"></index-list>
+              <index-list
+                :item="item"
+                :index="index1"
+                @goVideo="goVideo"
+              ></index-list>
             </block>
             <view class="loadingBox">{{ items.loadingText }}</view>
           </template>
@@ -100,10 +104,10 @@ export default {
                 "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEKASG3fotGuuhMUn*sD7slRyRBbbDOOBlYzs5s9JaPsxauwabxhk2oBzWiwrK.Ee9XkFWPmgDG2GvlmshfoiwKs!/b&bo=oAXAAwAAAAABF1Y!&rf=viewer_4",
               userName: "谢霆锋",
               isGuanZhu: true, //是否关注
-              title: "有人聊五块钱吗 在线等", //标题
+              title: "震惊 屏南县某男子吃下绿色耙耙 呕吐不止", //标题
               type: "video", // img 图片  video:视频
               content:
-                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrECF8Eila3I3XFdY7eMCOzTC5yNksuNql3KgUvlj3I2.jpUt.w1LQwDhmiN3qzcXTjtUbuhCA*WkKWvhhKrxstA4!/b&bo=7gI2BQAAAAABF.8!&rf=viewer_4", //封面地址
+                "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEKK*DhH7SoZYTmYZWvDv9JCxSUSJNQQ9Vw3pfMBNFhqp8sjtQ0URI9l2Uug0hh6Xgw8xwuQCJTuz*4UCLzsZiq8!/b&bo=*QEXAwAAAAADN*o!&rf=viewer_4", //封面地址
               infoNum: {
                 status: 2, // 0 都没点  1 点赞    2 踩
                 praiseNum: 1000, //点赞数
@@ -137,62 +141,6 @@ export default {
               commentNum: 10, //评论数
               transpondNum: 10, //转发数
             },
-            {
-              userPic:
-                "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨大龟",
-              isGuanZhu: true, //是否关注
-              title: "憨九龟啦啦啦啦啦", //标题
-              type: "video", // img 图片  video:视频
-              content:
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww4.sinaimg.cn%2Fmw690%2F61e692a7gy1galqkqhd5fj218z0u07kw.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611813703&t=79d1d825bd20d941d99f4a76cf0c6bde", //封面地址
-              infoNum: {
-                status: 2, // 0 都没点  1 点赞    2 踩
-                praiseNum: 1000, //点赞数
-                trampleNum: 1000, //踩的次数
-              },
-              playNum: 20,
-              timeNum: "2:14",
-              commentNum: 10, //评论数
-              transpondNum: 10, //转发数
-            },
-            {
-              userPic:
-                "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨八龟",
-              isGuanZhu: false, //是否关注
-              title: "憨八龟啦啦啦啦", //标题
-              type: "img", // img 图片  video:视频
-              content:
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww4.sinaimg.cn%2Fmw690%2F61e692a7gy1galqkqhd5fj218z0u07kw.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611813703&t=79d1d825bd20d941d99f4a76cf0c6bde", //封面地址
-              infoNum: {
-                status: 1, // 0 都没点  1 点赞    2 踩
-                praiseNum: 1000, //点赞数
-                trampleNum: 1000, //踩的次数
-              },
-
-              commentNum: 10, //评论数
-              transpondNum: 10, //转发数
-            },
-            {
-              userPic:
-                "https://dss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=222510244,4126440134&fm=26&gp=0.jpg",
-              userName: "憨大龟",
-              isGuanZhu: true, //是否关注
-              title: "憨九龟啦啦啦啦啦", //标题
-              type: "video", // img 图片  video:视频
-              content:
-                "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fww4.sinaimg.cn%2Fmw690%2F61e692a7gy1galqkqhd5fj218z0u07kw.jpg&refer=http%3A%2F%2Fwww.sina.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1611813703&t=79d1d825bd20d941d99f4a76cf0c6bde", //封面地址
-              infoNum: {
-                status: 2, // 0 都没点  1 点赞    2 踩
-                praiseNum: 1000, //点赞数
-                trampleNum: 1000, //踩的次数
-              },
-              playNum: 20,
-              timeNum: "2:14",
-              commentNum: 10, //评论数
-              transpondNum: 10, //转发数
-            },
           ],
         },
         {
@@ -217,7 +165,7 @@ export default {
         { name: "关注", id: "guanzhu" },
         { name: "推荐", id: "tuijian" },
         { name: "体育", id: "tiyu" },
-        { name: "热点", id: "redian" },
+        { name: "NBA", id: "redian" },
         { name: "财经", id: "caijing" },
         { name: "娱乐", id: "yule" },
       ],
@@ -251,7 +199,10 @@ export default {
     ontabchange(e) {
       this.tabIndex = e.detail.current;
     },
-    // 上拉加载更多
+    /**
+     * 上拉加载更多
+     *
+     *  */
     topLoading(index) {
       if (this.newList[index].loadingText != "上拉加载更多") {
         return;
@@ -282,17 +233,34 @@ export default {
       }, 1000);
       this.newList[index].loadingText != "上拉加载更多";
     },
-    // 微信小程序跳转到搜索页面
+    /**
+     * 微信小程序跳转到搜索页面
+     *
+     *
+     */
     goSearch() {
       console.log("我点了啊");
       uni.navigateTo({
         url: "./search/search",
       });
     },
-    //跳转到发布页面
+    /**
+     *
+     * 跳转到发布页面
+     */
     goIssue() {
       uni.navigateTo({
         url: "./issue/issue",
+      });
+    },
+    /**
+     * 跳转到视频详情页
+     *
+     */
+    goVideo() {
+      console.log("你是猪");
+      uni.navigateTo({
+        url: "../video/video",
       });
     },
   },

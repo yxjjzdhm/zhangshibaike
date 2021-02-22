@@ -1,7 +1,7 @@
 <template>
   <!-- 图文列表区域 -->
 
-  <view class="item">
+  <view class="item animated fadeInLeft fast">
     <!-- 头部部分 -->
     <view class="header">
       <view class="header-left">
@@ -28,14 +28,17 @@
     <!-- 标题部分 -->
     <view class="title"> {{ tempList.title }} </view>
     <!-- 图片|视频区域 -->
-    <view class="content">
+    <view class="content" @tap="goDetails" v-if="tempList.type == 'img'">
       <image mode="widthFix" class="img" :src="tempList.content" />
-      <block v-if="tempList.type == 'video'">
+    </view>
+    <view class="content" v-if="tempList.type == 'video'" @tap="goVideo">
+      <image mode="widthFix" class="img" :src="tempList.content" />
+      <view>
         <view class="pause icon iconfont icon-bofang"> </view>
         <view class="playnum">
           {{ tempList.playNum }}万次播放{{ tempList.timeNum }}</view
         >
-      </block>
+      </view>
     </view>
     <!-- 底部评论点赞区域 -->
     <!-- 底部评论点赞区域 -->
@@ -88,7 +91,6 @@
 export default {
   props: {
     item: Object,
-    index: Number,
   },
   data() {
     return {
@@ -99,6 +101,9 @@ export default {
     this.tempList = this.item;
   },
   methods: {
+    goVideo() {
+      this.$emit("goVideo");
+    },
     attention() {
       console.log(this.item);
       this.tempList.isGuanZhu = true;
@@ -112,7 +117,6 @@ export default {
     caozuo(type) {
       switch (type) {
         case "ding":
-          console.log("我顶了啊");
           if (this.tempList.infoNum.status == 1) {
             return;
           }
@@ -124,7 +128,6 @@ export default {
           break;
 
         case "cai":
-          console.log("我踩了啊");
           if (this.tempList.infoNum.status == 2) {
             return;
           }
@@ -136,6 +139,18 @@ export default {
           console.log(this.item);
           break;
       }
+    },
+    /**
+     *
+     * 跳转至详情页
+     */
+
+    goDetails() {
+      uni.navigateTo({
+        url:
+          "../../pages/details/details?datailsData=" +
+          encodeURIComponent(JSON.stringify(this.item)),
+      });
     },
   },
 };

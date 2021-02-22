@@ -7,9 +7,9 @@
           class="uni-tab-item"
           :class="{ active: tabIndex == index }"
           @tap="tabtap(index)"
-          :style="scollStyle"
+          :style="scrollItemStyle"
         >
-          {{ tab.name }}
+          {{ tab.name }}{{ tab.num ? tab.num : "" }}
           <view class="tab-line"></view>
         </view>
       </block>
@@ -46,9 +46,22 @@ export default {
 @import "../../common/scroll.css";
 .active {
   .tab-line {
-    width: 70upx;
+    width: 70 rpx;
     margin: auto;
-    border-bottom: 7upx solid #fede33;
+    border-bottom: 7rpx solid #fede33;
+  }
+}
+//用户聊天列表
+.chat-list {
+  padding: 0 25rpx;
+  .chat-item {
+    .user-pic {
+      .user-touxiang {
+        width: 100rpx;
+        height: 100rpx;
+        border-radius: 50%;
+      }
+    }
   }
 }
 </style>

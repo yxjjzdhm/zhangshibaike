@@ -14,8 +14,7 @@
         :tabBars="tabBars"
         :tabIndex="tabIndex"
         @tabtap="tabtap"
-        scollStyle="width:50%"
-        scrollItemStyle="border-bottom:0;"
+        scrollItemStyle="width:50%;"
       ></index-tabs>
     </view>
     <!-- 文章图片区域 -->

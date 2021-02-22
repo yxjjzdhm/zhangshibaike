@@ -1,5 +1,5 @@
 <template>
-  <view class="animated fadeInUp">
+  <view class="animated fadeInLeft fast">
     <!-- 顶部导航栏部分 -->
     <tabs
       :tabIndex="tabIndex"
@@ -117,12 +117,12 @@ export default {
         list: [
           {
             userPic:
-              "https://gss0.baidu.com/70cFfyinKgQFm2e88IuM_a/forum/w=580/sign=38345c9f293fb80e0cd161df06d02ffb/ee0f728b4710b912f121a650cbfdfc039345225d.jpg", //头像
-            username: "憨八龟",
-            sex: 0, //性别 0 男生  1女生
-            age: 19, //年龄
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //头像
+            username: "谢轰轰",
+            sex: 1, //性别 0 男生  1女生
+            age: 42, //年龄
             isguanzhu: false, //是否关注
-            title: "从前从前有一只憨八龟，长得又丑又下饭。真的吗 哈哈哈", //标题
+            title: "好无聊 有五十岁以上的小姐姐聊骚吗 在线等", //标题
             img: "", //图片
             video: false, //视频
             reprint: false, // 转载
@@ -133,17 +133,51 @@ export default {
           },
           {
             userPic:
-              "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.5mcc.com.cn%2F5mcc_com_cn%2Fallimg%2F190130%2F160H5GB-0.jpg&refer=http%3A%2F%2Fimg.5mcc.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612593074&t=1a47df133851b120e3999a76ffe6e432", //头像
-            username: "憨八龟",
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //头像
+            username: "谢轰轰",
             sex: 0, //性别 0 男生  1女生
             age: 19, //年龄
             isguanzhu: false, //是否关注
-            title: "从前从前有一只憨八龟，长得又丑又下饭。真的吗 哈哈哈", //标题
+            title: "有人想躺在我健壮的肱二头肌上吗", //标题
             img:
-              "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1339101750,3210784440&fm=26&gp=0.jpg", //图片
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //图片
             video: false, //视频
             reprint: false, // 转载
-            site: "广东 东菀", //地址
+            site: "宁德 古田", //地址
+            transmitSum: 33, //转发次数
+            commentSum: 34, //评论次数
+            goodSum: 44, //点赞次数
+          },
+          {
+            userPic:
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //头像
+            username: "谢轰轰",
+            sex: 0, //性别 0 男生  1女生
+            age: 19, //年龄
+            isguanzhu: false, //是否关注
+            title: "世界上最遥远的距离，就是爱的人在身边 却没法说出口", //标题
+            img:
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEKA9mhoD8A6SfARTf1ZXPpYVG8dju3MTc*cx7Zd3ejUIx0F9YsOpR2VheN4mKk597qtl6N.cNqXX5V7H28EIVRI!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //图片
+            video: false, //视频
+            reprint: false, // 转载
+            site: "宁德 古田", //地址
+            transmitSum: 33, //转发次数
+            commentSum: 34, //评论次数
+            goodSum: 44, //点赞次数
+          },
+          {
+            userPic:
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //头像
+            username: "谢轰轰",
+            sex: 0, //性别 0 男生  1女生
+            age: 19, //年龄
+            isguanzhu: false, //是否关注
+            title: "你温柔的小手 轻抚我的脸庞的那一刻 我醉了", //标题
+            img:
+              "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEGuoZmlRghZJU84vNSHBvvcLTJUIKDyreD5jJ51woX1UswAiiuvA0ge1sl*Kq*krH2jvr4BUHxRhlk*HOciV914!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //图片
+            video: false, //视频
+            reprint: false, // 转载
+            site: "宁德 古田", //地址
             transmitSum: 33, //转发次数
             commentSum: 34, //评论次数
             goodSum: 44, //点赞次数
@@ -152,7 +186,7 @@ export default {
             userPic:
               "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.5mcc.com.cn%2F5mcc_com_cn%2Fallimg%2F190130%2F160H5GB-0.jpg&refer=http%3A%2F%2Fimg.5mcc.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612593074&t=1a47df133851b120e3999a76ffe6e432", //头像
             username: "憨八龟",
-            sex: 0, //性别 0 男生  1女生
+            sex: 1, //性别 0 男生  1女生
             age: 19, //年龄
             isguanzhu: false, //是否关注
             title: "从前从前有一只憨八龟，长得又丑又下饭。", //标题
@@ -237,17 +271,17 @@ export default {
       setInterval(() => {
         let arr = {
           userPic:
-            "https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimg.5mcc.com.cn%2F5mcc_com_cn%2Fallimg%2F190130%2F160H5GB-0.jpg&refer=http%3A%2F%2Fimg.5mcc.com.cn&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1612593074&t=1a47df133851b120e3999a76ffe6e432", //头像
-          username: "憨八龟",
+            "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEG7.38dtYTBu6vXsX*Q.PXoBQpqkD.mEzgt9uYUQRt7OX38f2rQzcMnE5.sIyP5l5reoiPCQ9U5EdMv4uZLIp9c!/b&bo=OASgBQAAAAABF6k!&rf=viewer_4", //头像
+          username: "谢轰轰",
           sex: 0, //性别 0 男生  1女生
           age: 19, //年龄
           isguanzhu: false, //是否关注
-          title: "从前从前有一只憨八龟，长得又丑又下饭。真的吗 哈哈哈", //标题
+          title: "你温柔的小手 轻抚我的脸庞的那一刻 我醉了", //标题
           img:
-            "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1339101750,3210784440&fm=26&gp=0.jpg", //图片
+            "http://m.qpic.cn/psc?/V13cDPCi1NRVRa/TmEUgtj9EK6.7V8ajmQrEEuqTIYVPK.gqSWejfaM9EUPiM7h*3T9I4FSBKVAjQ07skr9dTPKIIozsi4tKksUifhOt2UUJKtt52vwknsCDJ0!/b&bo=OATeBAAAAAABF9Y!&rf=viewer_4", //图片
           video: false, //视频
           reprint: false, // 转载
-          site: "广东 东菀", //地址
+          site: "宁德 古田", //地址
           transmitSum: 33, //转发次数
           commentSum: 34, //评论次数
           goodSum: 44, //点赞次数

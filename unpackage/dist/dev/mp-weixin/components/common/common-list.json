@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
-  "component": true
+  "component": true,
+  "usingComponents": {
+    "common-sex-age": "/components/common/common-sex-age"
+  }
 }
